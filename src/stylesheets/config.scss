@@ -1,0 +1,29 @@
+.switch.on {
+    background: #2196F3 !important;
+}
+
+.sweet-alert button {
+  background-color: #2196F3 !important;
+}
+
+input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #76838f;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #76838f;
+   opacity:  1;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #76838f;
+   opacity:  1;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #76838f;
+}
+
+/*#react-app > [data-reactroot] {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f1f4f5;
+}*/

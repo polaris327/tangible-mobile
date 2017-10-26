@@ -1,0 +1,108 @@
+.ReactTabs__TabList {
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 48px;
+  width: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+  white-space: nowrap;
+  cursor: pointer;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ReactTabs__TabList.tabs-transparent {
+  background-color: transparent;
+}
+
+.ReactTabs__TabList.tabs-transparent .tab a,
+.ReactTabs__TabList.tabs-transparent .tab.disabled a,
+.ReactTabs__TabList.tabs-transparent .tab.disabled a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.ReactTabs__TabList.tabs-transparent .tab a:hover,
+.ReactTabs__TabList.tabs-transparent .ReactTabs__Tab--selected {
+  color: #fff;
+}
+
+.ReactTabs__TabList.tabs-transparent .indicator {
+  background-color: #fff;
+}
+
+.ReactTabs__TabList.tabs-fixed-width {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ReactTabs__TabList.tabs-fixed-width .ReactTabs__Tab {
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.ReactTabs__TabList .ReactTabs__Tab {
+  display: inline-block;
+  text-align: center;
+  line-height: 48px;
+  height: 48px;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.ReactTabs__TabList .ReactTabs__Tab a {
+  color: rgba(238, 110, 115, 0.7);
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0 24px;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: color .28s ease;
+}
+
+.ReactTabs__TabList .ReactTabs__Tab a:hover, .ReactTabs__TabList .ReactTabs__Tab--selected {
+  background-color: transparent;
+  color: #2196F3;
+  border-bottom: 2px solid #2196F3;
+}
+
+.ReactTabs__TabList .ReactTabs__Tab.disabled a,
+.ReactTabs__TabList .ReactTabs__Tab.disabled a:hover {
+  color: rgba(238, 110, 115, 0.7);
+  cursor: default;
+}
+
+.ReactTabs__TabList .indicator {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background-color: #f6b2b5;
+  will-change: left, right;
+}
+
+@media only screen and (max-width: 992px) {
+  .ReactTabs__TabList {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .ReactTabs__TabList .ReactTabs__Tab {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+  .ReactTabs__TabList .ReactTabs__Tab a {
+    padding: 0 12px;
+  }
+}
